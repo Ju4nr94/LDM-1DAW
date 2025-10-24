@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table{
+            td{
+                background-color: #A4CCD4;
+                border: 1px solid #000;
+                border-collapse: collapse;
+            }
+            th{
+                background-color: #648CA4;
+                border: 1px solid #000;
+                border-collapse: collapse;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+    <head>
+        <title>Repaso de HTML</title>
+    </head>
+    <body>
+        <h1>Repaso de HTML</h1>
+        <a href="https://www.w3schools.com/html/">
+            <img src="./src/HTML.png" alt="HTML" style="width:300px;">
+        </a>
+        <ul>
+            <li><a href="#text">Texto</a></li>
+            <li><a href="#table">Tabla</a></li>
+            <li><a href="#form">Formulario</a></li>
+        </ul>
+        <section>
+            <h2 id="text">Texto</h2>
+            <p>Ejemplo básico: uso de etiquetas de formato y atributos básicos para la etiqueta body.</p>
+            <p><b>Negrita</b></p>
+            <p><i>Cursiva</i></p>
+            <p><s>Subrayado</s></p>
+            <p><strong>Grande</strong></p>
+            <p><small>Pequeño</small></p>
+            <p>Esto es un <sub>subíndice</sub></p>
+            <p>Y esto es un <sup>superíndice</sup></p>
+        </section>
+        <section>
+            <h2 id="table">Tabla</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Medio</th>
+                        <th>Nombre</th>
+                        <th>Tipo de transmisión</th>
+                        <th>Velocidad de transmisión</th>
+                        <th>Distancia máxima</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Físico</th>
+                        <td>Par trenzado</td>
+                        <td>Señale eléctricas</td>
+                        <td>Hasta 1Gb/s</td>
+                        <td>&lt; 100m</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra óptica</td>
+                        <td>Señales ópticas</td>
+                        <td>Hasta 1Tb/s</td>
+                        <td>&lt; 2km</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Sin cable</th>
+                        <td>Wi-Fi</td>
+                        <td>Ondas electromagnéticas</td>
+                        <td>Hasta 10Mb/s</td>
+                        <td>&lt; 100m</td>
+                    </tr>
+                    <tr>
+                        <td>Bluetooth</td>
+                        <td>Ondas electromagnéticas</td>
+                        <td>Hasta 3Mb/s</td>
+                        <td>&lt; 100m</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2 id="form">Formulario</h2>
+        </section>
+    </body>
+</html>
