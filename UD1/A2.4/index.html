@@ -82,6 +82,26 @@
         </section>
         <section>
             <h2 id="form">Formulario</h2>
+            <form action="">
+                <label for="name">Usuario: </label>
+                <input type="text" name="name" id="name" maxlength="15"><br><br>
+                <label for="password">Contraseña:</label>
+                <input type="password" maxlength="8"><br><br>
+                <label for="gender">Género:</label><br><br>
+                <input type="radio" name="masc" id="masc"><label for="masc">Masculino</label>
+                <input type="radio" name="fem" id="fem"><label for="fem">Femenino</label>
+                <input type="radio" name="other" id="other"><label for="other">Otro</label><br><br>
+                <label for="terms">Acepto el tratamiento de mis datos para gestionar mi solicitud</label>
+                <input type="checkbox" name="terms" id="terms" required><br><br>
+                <label for="pref">Preferencia:</label>
+                <select name="pref" id="pref">
+                    <option value="mor">Mañana</option>
+                    <option value="aft">Tarde</option>
+                    <option value="any">Indiferente</option>
+                </select><br><br>
+                <textarea name="application" id="application" cols="40" rows="4" maxlength="200"></textarea><br><br>
+                <input type="submit" type="submit" id="submit">
+            </form>
         </section>
     </body>
 </html>
