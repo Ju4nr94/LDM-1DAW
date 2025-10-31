@@ -1,0 +1,16 @@
+/* Todos los elementos de la pagina */
+* { font: 1em/1.3 Arial, Helvetica, sans-serif; }
+/* Todos los parrafos de la pagina */
+* { color: #555; }
+/* Todos los títulos h1*/
+h1 { color: #336699; }
+/* Todos los enlaces la pagina */
+a { color: #CC3300; }
+/* Elementos "span" contenidos en p */
+p span {
+        font-weight: bold; 
+}
+/* Elementos "span" contenidos en h2 */
+h2 span { font-weight: bold;}
+/* Elementos "span" contenidos en la clase
+.especial */ *.especial{ font-weight: bold; }

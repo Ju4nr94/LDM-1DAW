@@ -1,0 +1,24 @@
+body{
+    background-color:lightblue;
+}
+h1.naranja{
+    color:orange;
+}
+p#verde{
+    color:green;
+    span{
+        color:black;
+    }
+}
+p.rojo{
+    color:red;
+    span{
+        color:yellow;
+    }
+}
+p.azul{
+    color:blue;
+    span{
+        color:green;
+    }
+}
