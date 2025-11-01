@@ -32,7 +32,6 @@ img { border: none; }
 /*-- Cabecera --------------------------------------------------------*/
 #cabecera #logo { float: left; }
 #cabecera #buscador { float: right; }
-
 /*-- Menu ------------------------------------------------------------*/
 #menu ul#menu_principal li { display: inline; float: left; }
 
@@ -70,12 +69,12 @@ img { border: none; }
 }
 
 #menu {
-  
+  padding:0.5em;
+  margin-bottom:0.5em;
 }
 
 #contenido {
-  width: 77%;
-
+  width: 74%;
 }
 
 #contenido #principal {
@@ -83,7 +82,8 @@ img { border: none; }
 }
 
 #pie {
-
+  padding-left:0;
+  padding-right:0;
 }
 
 #contenido #principal .articulo {
@@ -91,9 +91,15 @@ img { border: none; }
 }
 
 #contenido #principal .articulo img { 
-  
+  margin:0.5em;
 }
 
 #lateral #publicidad {
-  
+  margin-top:1em;
+}
+* {
+  padding:0.5em;
+}
+.articulo {
+  margin:0.5em;
 }
