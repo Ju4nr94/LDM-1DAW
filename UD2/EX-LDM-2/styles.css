@@ -1,0 +1,104 @@
+/* === IMPORTANTE ===
+   No modificar estos estilos, ya que son imprescindibles para
+   que la página se vea correctamente.
+   ================= */
+
+/*-- Básico ----------------------------------------------------------*/
+h1, h2, p { margin: 0; padding: 0; }
+img { border: none; }
+/*-- Layout ----------------------------------------------------------*/
+nav, main {
+  width: 90%;
+  max-width: 900px;
+  width: expression(document.body.clientWidth > 901? "900px": "auto");
+  margin: 0 auto;
+}
+
+header, nav, footer { clear: both; }
+
+/* === IMPORTANTE ===
+   A partir de aquí, se pueden añadir todos los estilos propios que
+   sean necesarios.
+   ================= */
+*{
+   font-family:Arial, Helvetica, sans-serif;
+   text-align:justify;
+}
+h1 {
+   font-size:3rem;
+   text-align:center;
+}
+h2 {
+   font-size:2rem;
+   background-color:gray;
+   color:white;
+   padding:0.5em 0.2em;
+   margin-bottom:0.5em;
+}
+h2.rojo {
+   background-color:crimson;
+}
+h2.azul {
+   background-color:dodgerblue;
+}
+p {
+   margin:1em;
+}
+p strong {
+   background-color:white;
+}
+header {
+   padding:1em;
+}
+nav {
+   padding:0.5em;
+   margin-bottom:0.5em;
+   border-bottom:3px darkgray solid;
+   a:link {
+      color:dodgerblue;
+      font-weight:bold;
+      text-decoration:none;
+      padding:0.5em;
+   }
+   a:hover{
+      background-color:dodgerblue;
+      color:white;
+   }
+   a:visited{
+      color:#666;
+   }
+}
+article {
+   margin:1em 0em;
+   padding-bottom:1em;
+   background-color:lightgray;
+   img {
+      margin-right:1em;
+      margin-bottom:1em;
+      width:100px;
+      position:relative;
+      float: left;
+   }
+   a:link{
+      font-weight:bold;
+      color:white;
+      text-decoration:none;
+      font-size:0.9em;
+      background-color:dimgray;
+      padding:0.5em;
+      border-radius:10px;
+   }
+   a:hover {
+      background-color:black;
+   }
+}
+footer {
+   margin-top:1em;
+   padding-top:1em;
+   border-top:1px #C5C5C5 dashed;
+   font-size:0.8em;
+   color:#666;
+   p {
+      text-align:center;
+   }
+}
