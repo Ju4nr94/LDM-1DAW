@@ -8,43 +8,38 @@
 /* --- MODOS DE COLOR (Variables) --- */
 
 :root {
-    /* Modo Claro (Paleta: Azul Cielo, Arena/Oro, Blanco Nube) */
-    --color-bg-body: #F9F9F9; /* Blanco Nube Ligeramente Grisáceo */
-    --color-bg-container: #FFFFFF; /* Blanco Nube Puro */
+    --color-bg-body: #F9F9F9;
+    --color-bg-container: #FFFFFF;
     --color-text-primary: #333333;
     --color-text-secondary: #555555;
     
-    --color-accent: #4AA0E1; /* Azul Cielo Profundo (Acento principal) */
+    --color-accent: #4AA0E1;
     
-    --color-note-bg: #FFF8E1; /* Fondo muy claro de arena para la nota */
-    --color-note-text: #8D6E63; /* Marrón suave para el texto de la nota */
-    --color-note-border: #FFCA28; /* Amarillo Oro (Borde de atención) */
+    --color-note-bg: #FFF8E1;
+    --color-note-text: #8D6E63;
+    --color-note-border: #FFCA28;
     
-    --color-cta-bg: #FFB300; /* Naranja Oro (CTA) */
-    --color-cta-hover: #FFA000; /* Naranja Oro más oscuro al pasar el ratón */
+    --color-cta-bg: #FFB300;
+    --color-cta-hover: #FFA000;
     --color-border-subtle: #EDEDED;
 }
 
-/* Modo Oscuro Automático: Se aplica cuando el sistema operativo tiene activado el dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
-        /* Modo Oscuro (Paleta Invertida/Oscura) */
-        --color-bg-body: #1E212D; /* Azul Oscuro Profundo */
-        --color-bg-container: #282C3A; /* Gris/Azul Oscuro para la tarjeta */
-        --color-text-primary: #E0E0E0; /* Texto claro */
+        --color-bg-body: #1E212D;
+        --color-bg-container: #282C3A;
+        --color-text-primary: #E0E0E0;
         --color-text-secondary: #AAAAAA;
         
-        --color-accent: #64B5F6; /* Azul Cielo Brillante (Acento principal) */
+        --color-accent: #64B5F6;
         
-        --color-note-bg: #3A3F47; /* Fondo oscuro para la nota */
-        --color-note-text: #E8D5C4; /* Arena Clara para el texto de la nota */
+        --color-note-bg: #3A3F47;
+        --color-note-text: #E8D5C4;
+
+        --color-note-border: #DAA520;
         
-        /* Ajuste de brillo para el modo oscuro */
-        --color-note-border: #DAA520; /* Goldenrod, menos brillante que el original */
-        
-        /* CORRECCIÓN WCAG: Oscurecer el fondo del CTA para que el texto blanco tenga contraste */
-        --color-cta-bg: #8B6A00; /* Oro muy oscuro */
-        --color-cta-hover: #9E7D00; /* Tono de hover ajustado */
+        --color-cta-bg: #8B6A00;
+        --color-cta-hover: #9E7D00;
         --color-border-subtle: #3A3F47;
     }
 }
@@ -55,50 +50,43 @@ body {
     color: var(--color-text-primary);
     margin: 0;
     padding: 0;
-    background-color: var(--color-bg-body); /* Uso de variable */
+    background-color: var(--color-bg-body);
     line-height: 1.6;
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Contenedor principal para centrar el contenido y limitar el ancho */
 .page-container {
-    max-width: 1000px; /* Aumentado para pantallas grandes */
-    margin: 20px auto; /* Reducido a 20px arriba/abajo para parecer menos un "recuadro" */
+    max-width: 1000px;
+    margin: 20px auto;
     padding: 20px;
-    background-color: var(--color-bg-container); /* Uso de variable */
+    background-color: var(--color-bg-container);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); 
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-/* --- LOGO SPACE --- */
 .logo-container {
     text-align: center;
-    margin-bottom: 25px; /* Espacio entre el logo y el H1 */
+    margin-bottom: 25px;
     padding-top: 10px;
 }
 
 header img {
-    /* Estilos para que la imagen del logo se vea bien y sea responsiva */
-    max-width: 120px; /* Tamaño máximo para que el logo destaque */
-    height: auto; /* Mantiene la proporción */
-    display: block; /* Necesario para centrar la imagen */
+    max-width: 120px;
+    height: auto;
+    display: block;
     margin: 0 auto;
-    border-radius: 50%; /* Forma circular para un look de emblema */
-    border: 6px solid var(--color-note-border); /* Borde dorado (Oro) */
+    border-radius: 50%;
+    border: 6px solid var(--color-note-border);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    /* Aseguramos que el fondo del cuerpo no se vea a través del logo, si la imagen es transparente */
     background-color: var(--color-bg-container); 
 }
-/* ------------------ */
 
-
-/* Títulos principales */
 h1 {
     font-size: 3em;
     font-weight: 800;
-    color: var(--color-accent); /* Uso de variable (Azul Cielo) */
+    color: var(--color-accent);
     text-align: center;
     margin-bottom: 5px;
 }
@@ -106,7 +94,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     font-weight: 600;
-    color: var(--color-text-secondary); /* Uso de variable */
+    color: var(--color-text-secondary);
     text-align: center;
     margin-top: 0;
     margin-bottom: 40px;
@@ -115,46 +103,42 @@ h2 {
 h3 {
     font-size: 1.3em;
     font-weight: 600;
-    color: var(--color-accent); /* Uso de variable (Azul Cielo) */
+    color: var(--color-accent);
     margin-top: 25px;
     margin-bottom: 10px;
     border-left: 4px solid var(--color-accent);
     padding-left: 10px;
 }
 
-/* Párrafos de contenido */
 p {
     margin-bottom: 15px;
-    color: var(--color-text-primary); /* Uso de variable */
+    color: var(--color-text-primary);
 }
 
-/* Estilos específicos para texto */
 .normal-text {
     font-size: 1.1em;
 }
 
 .small-note {
     font-size: 0.85em;
-    color: var(--color-note-text); /* Uso de variable (Marrón Arena) */
-    background-color: var(--color-note-bg); /* Uso de variable (Fondo Arena Claro) */
+    color: var(--color-note-text);
+    background-color: var(--color-note-bg);
     padding: 10px;
     border-radius: 6px;
-    border-left: 3px solid var(--color-note-border); /* Uso de variable (Oro) */
+    border-left: 3px solid var(--color-note-border);
 }
 
-/* Sección de Llamada a la Acción (CTA) */
 .cta-section {
     text-align: center;
     padding-top: 20px;
     margin-top: 20px;
-    border-top: 1px solid var(--color-border-subtle); /* Uso de variable */
+    border-top: 1px solid var(--color-border-subtle);
 }
 
-/* Enlace de Llamada a la Acción (CTA) */
 .cta-section a {
     display: inline-block;
-    background-color: var(--color-cta-bg); /* Uso de variable (Oro) */
-    color: white; /* El texto blanco funciona con la corrección de color-cta-bg */
+    background-color: var(--color-cta-bg);
+    color: white;
     padding: 15px 30px;
     font-size: 1.2em;
     font-weight: 600;
@@ -166,14 +150,12 @@ p {
 }
 
 .cta-section a:hover {
-    background-color: var(--color-cta-hover); /* Uso de variable (Oro más oscuro) */
+    background-color: var(--color-cta-hover);
     transform: translateY(-1px);
 }
 
-/* Responsividad básica para pantallas pequeñas */
 @media (max-width: 600px) {
     .page-container {
-        /* Restaurar márgenes en móvil */
         margin: 20px;
         padding: 15px;
     }
