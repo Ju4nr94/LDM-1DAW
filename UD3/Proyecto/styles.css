@@ -13,10 +13,11 @@
     --color-text-primary: #333333;
     --color-text-secondary: #555555;
     
-    --color-accent: #4AA0E1;
+    --color-accent-title: #1F7BC1;
+    --color-accent: #185C91;
     
     --color-note-bg: #FFF8E1;
-    --color-note-text: #8D6E63;
+    --color-note-text: #704738;
     --color-note-border: #FFCA28;
     
     --color-cta-bg: #FFB300;
@@ -27,7 +28,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-bg-body: #1E212D;
-        --color-bg-container: #282C3A;
+        --color-bg-container: #1F2137;
         --color-text-primary: #E0E0E0;
         --color-text-secondary: #AAAAAA;
         
@@ -38,7 +39,7 @@
 
         --color-note-border: #DAA520;
         
-        --color-cta-bg: #8B6A00;
+        --color-cta-bg: #F5BC00;
         --color-cta-hover: #9E7D00;
         --color-border-subtle: #3A3F47;
     }
@@ -86,7 +87,7 @@ header img {
 h1 {
     font-size: 3em;
     font-weight: 800;
-    color: var(--color-accent);
+    color: var(--color-accent-title);
     text-align: center;
     margin-bottom: 5px;
 }
@@ -138,7 +139,7 @@ p {
 .cta-section a {
     display: inline-block;
     background-color: var(--color-cta-bg);
-    color: white;
+    color: #000000;
     padding: 15px 30px;
     font-size: 1.2em;
     font-weight: 600;
