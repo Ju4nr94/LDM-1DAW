@@ -1,0 +1,42 @@
+body {
+    background-image: url("./src/mi26.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250%;
+}
+
+#botonera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;   /* por ejemplo */
+    height: auto;       /* o quita la altura */
+}
+
+
+#botonera button {
+    background-color: steelblue;
+    border-radius: 10px;
+    width: 3em;
+    height: 3em;
+    border-style: dotted;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    width: 80%;
+    height: 10px;
+    background-color: #ccc;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: steelblue;
+}
