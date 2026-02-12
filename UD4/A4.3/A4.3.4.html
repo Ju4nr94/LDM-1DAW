@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Práctica 4</title>
+    </head>
+    <body>
+        <h1>Práctica 4</h1>
+        <p>Recorrido de arrays de tipo clave-valor</p>
+        <ol id="lista2"></ol>
+        <a onclick="mostrar_lista_clave()">Mostrar lista clave y valor</a>
+        <script>
+            function mostrar_lista_clave() {
+                const lista2 = document.getElementById('lista2');
+                const array = [
+                    { marca: "BMW", precio: 45000},
+                    { marca: "Volvo", precio: 38000},
+                    { marca: "Saab", precio: 32000},
+                    { marca: "Ford", precio: 28000}
+                ];
+                array.forEach(array => {
+                    const li = document.createElement("li");
+                    li.textContent = "El " + array.marca + " tiene un precio de " + array.precio + "€";
+                    lista2.appendChild(li);
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Práctica 2</title>
+    </head>
+    <body>
+        <h1>Práctica 2</h1>
+        <p>Recorrido de arrays numéricos</p>
+        <a onclick="recorre_simple()">Sumar</a>
+        <script>
+            function recorre_simple() {
+                const array = [1,2,3,4,5];
+                resultado = 0;
+                array.forEach(function(n) {
+                    resultado+=n;
+                })
+                alert(resultado);
+            }
+        </script>
+    </body>
+</html>

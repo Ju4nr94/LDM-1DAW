@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Práctica 3</title>
+    </head>
+    <body>
+        <h1>Práctica 3</h1>
+        <p>Recorrido de arrays para inyectar HTML</p>
+        <ol id="lista1"></ol>
+        <a onclick="mostrar_lista()">Mostrar lista</a>
+        <script>
+            function mostrar_lista() {
+                const lista1 = document.getElementById('lista1');
+                const array = ["BMW", "Volvo", "Saab", "Ford"];
+                array.forEach(function(n){
+                    const li = document.createElement("li");
+                    li.textContent = n;
+                    lista1.appendChild(li);
+                })
+            }
+        </script>
+    </body>
+</html>

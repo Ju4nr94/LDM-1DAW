@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Práctica 1</title>
+    </head>
+    <body>
+        <h1>Práctica 1</h1>
+        <p>Completa los campos y dale click en Ejecutar.</p>
+        <form action="" id="form">
+            <input type="text" id="tb1">
+            <input type="text" id="tb2">
+            <input type="button" id="button" onclick="leeform()" value="Ejecutar">
+        </form>
+        <div>
+            <p id="tbf"></p>
+        </div>
+        <script>
+            function leeform() {
+                const form = document.getElementById('form');
+                let tb1 = document.getElementById('tb1').value;
+                let tb2 = document.getElementById('tb2').value;
+                document.getElementById('tbf').innerText = tb1 + " " + tb2;
+            }
+        </script>
+    </body>
+</html>
