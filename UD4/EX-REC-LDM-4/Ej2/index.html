@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de evento</title>
+</head>
+<body>
+    <h1>Inscripción al evento</h1>
+    <form id="formulario">
+        <label  for="nombre">Nombre:</label>
+        <input type="text" id="nombre"/>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email"/>        
+        <br><br>
+        <p>Tipo de entrada</p>
+        <label>
+        <input type="radio" name="entrada" id="general" value="General"> General
+        </label>
+        <label>
+        <input type="radio" name="entrada" id="vip" value="VIP"> VIP
+        </label>
+        <br><br>
+        <p>Actividades</p>
+        <label>
+        <input type="checkbox" name="actividad" value="Taller"> Taller
+        </label>
+        <label>
+        <input type="checkbox" name="actividad" value="Networking"> Networking
+        </label>
+        <label>
+        <input type="checkbox" name="actividad" value="Charla"> Charla
+        </label>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="mensaje"></p>
+    <script src="./script.js"></script>
+</body>
+</html>
