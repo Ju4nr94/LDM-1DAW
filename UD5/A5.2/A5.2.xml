@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instituto PUBLIC "public-id" "./A5.2.dtd">
+<instituto>
+    <curso nombre="1º DAW">
+        <modulo>
+            <nombre>Programación</nombre>
+            <horasSemanales>8</horasSemanales>
+            <profesor>María López</profesor>
+        </modulo>
+        <modulo>
+            <nombre>Bases de Datos</nombre>
+            <horasSemanales>6</horasSemanales>
+            <profesor>Juan Pérez</profesor>
+        </modulo>
+    </curso>
+    
+    <curso nombre="2º DAW">
+        <modulo>
+            <nombre>Despliegue de aplicaciones web</nombre>
+            <horasSemanales>6</horasSemanales>
+            <profesor>Ana García</profesor>
+        </modulo>
+        <modulo>
+            <nombre>Desarrollo web en entorno cliente</nombre>
+            <horasSemanales>5</horasSemanales>
+            <profesor>Luis Martín</profesor>
+        </modulo>
+    </curso>
+</instituto>

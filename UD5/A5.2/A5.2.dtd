@@ -1,0 +1,10 @@
+<!ELEMENT instituto (curso+)>
+
+<!ELEMENT curso (modulo+)>
+<!ATTLIST curso nombre CDATA #REQUIRED>
+
+<!ELEMENT modulo (nombre, horasSemanales, profesor)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT horasSemanales (#PCDATA)>
+<!ELEMENT profesor (#PCDATA)>

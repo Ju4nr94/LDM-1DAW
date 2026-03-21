@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "catalogo.dtd">
+<catalogo>
+    <pelicula id="P01">
+        <titulo>El Resplandor</titulo>
+        <director>Stanley Kubrick</director>
+        <anio>1980</anio>
+        <genero>Terror</genero>
+        <duracion>146 minutos</duracion>
+        <actores>
+            <actor>Jack Nicholson</actor>
+            <actor>Shelley Duvall</actor>
+            <actor>Danny Lloyd</actor>
+            <actor>Scatman Crothers</actor>
+        </actores>
+    </pelicula>
+    <pelicula id="P02">
+        <titulo>Origen</titulo>
+        <director>Christopher Nolan</director>
+        <anio>2010</anio>
+        <genero>Ciencia ficción</genero>
+        <duracion>148 minutos</duracion>
+    </pelicula>
+    <pelicula id="P03">
+        <titulo>El Rey León</titulo>
+        <director>Rob Minkoff</director>
+        <anio>1994</anio>
+        <genero>Animación</genero>
+        <duracion>88 minutos</duracion>
+    </pelicula>
+</catalogo>
