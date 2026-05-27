@@ -1,0 +1,24 @@
+<!ELEMENT biblioteca (libros+, usuarios+, prestamos+)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT libros (libro+)>
+<!ELEMENT libro (id, nombre, autores, año, editorial, categoria)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT autores (autor+)>
+<!ELEMENT autor (#PCDATA)>
+
+<!ELEMENT usuarios (usuario+)>
+<!ELEMENT usuario (id, nombre, apellido+, email+, tipo)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+
+<!ELEMENT prestamos (prestamo+)>
+<!ELEMENT prestamo (id_usuario, fecha_inicio, fecha_fin, id_libros)>
+<!ELEMENT id_usuario (#PCDATA)>
+<!ELEMENT fecha_inicio (#PCDATA)>
+<!ELEMENT fecha_fin (#PCDATA)>
+<!ELEMENT id_libros (id+)>
