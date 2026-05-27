@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./consultas.xsl"?>
+<aeropuerto>
+    <actualizacion>2026-05-24 18:30</actualizacion>
+    <vuelo codigo="IB3642">
+        <destino>Madrid (MAD)</destino>
+        <compania>Iberia</compania>
+        <hora_salida>19:15</hora_salida>
+        <puerta terminal="T4">H22</puerta>
+        <retraso_mins>0</retraso_mins>
+        <estado>en_hora</estado>
+    </vuelo>
+    <vuelo codigo="FR2011">
+        <destino>Londres (STN)</destino>
+        <compania>Ryanair</compania>
+        <hora_salida>19:45</hora_salida>
+        <puerta terminal="T1">A05</puerta>
+        <retraso_mins>45</retraso_mins>
+        <estado>en_hora</estado>
+    </vuelo>
+    <vuelo codigo="AF1124">
+        <destino>París (CDG)</destino>
+        <compania>Air France</compania>
+        <hora_salida>20:00</hora_salida>
+        <puerta terminal="T2">B12</puerta>
+        <retraso_mins>0</retraso_mins>
+        <estado>cancelado</estado>
+    </vuelo>
+    <vuelo codigo="UX4015">
+        <destino>Barcelona (BCN)</destino>
+        <compania>Air Europa</compania>
+        <hora_salida>18:45</hora_salida>
+        <puerta terminal="T4">K10</puerta>
+        <retraso_mins>0</retraso_mins>
+        <estado>embarcando</estado>
+    </vuelo>
+</aeropuerto>

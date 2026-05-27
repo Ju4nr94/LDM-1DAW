@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:element name="taller">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="vehiculo"/>
+                <xs:element ref="ordenes"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="vehiculo">
+        <xs:complexType>
+            <xs:attribute name="modelo" type="xs:string" use="required"/>
+            <xs:attribute name="año" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="ordenes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="vehiculo"/>
+                <xs:element name="servicios" type="servicio"/>
+            </xs:sequence>
+            <xs:attribute name="urgente" type="xs:boolean" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="servicio">
+        <xs:sequence>
+            <xs:element name="descripcion" type="xs:string"/>
+            <xs:element name="coste" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

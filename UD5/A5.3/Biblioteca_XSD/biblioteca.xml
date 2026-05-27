@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./biblioteca.xsl"?>
+<?xml-model href="./biblioteca.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<biblioteca>
+    <libros>
+        <libro>
+            <id>001</id>
+            <nombre>Manuel en Sarajevo</nombre>
+            <autores>
+                <autor>Nicolás García Rodríguez</autor>
+                <autor>Álvaro Jaime Moro</autor>
+            </autores>
+            <año>2025</año>
+            <editorial>Vicent Vives</editorial>
+            <categoria>Bélico</categoria>
+        </libro>
+    </libros>
+    <usuarios>
+        <usuario>
+            <id>98765123A</id>
+            <nombre>Pepe</nombre>
+            <apellido>Pérez</apellido>
+            <apellido>Porras</apellido>
+            <email>pperpor123@g.educaand.es</email>
+            <email>pepeporro@gmail.com</email>
+            <tipo>estudiante</tipo>
+        </usuario>
+    </usuarios>
+    <prestamos>
+        <prestamo>
+            <id_usuario>98765123A</id_usuario>
+            <fecha_inicio>15/12/2026</fecha_inicio>
+            <fecha_fin>15/01/2027</fecha_fin>
+            <id_libros>
+                <id>001</id>
+            </id_libros>
+        </prestamo>
+    </prestamos>
+</biblioteca>

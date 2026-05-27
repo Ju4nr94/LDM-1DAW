@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:element name="biblioteca">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="libros"/>
+                <xs:element ref="usuarios"/>
+                <xs:element ref="prestamos"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="libros">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libro" type="tipoLibro" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="tipoLibro">
+        <xs:sequence>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="autores">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="autor" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="año" type="xs:integer"/>
+            <xs:element name="editorial" type="xs:string"/>
+            <xs:element name="categoria" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="usuarios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="usuario" type="tipoUsuario" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="tipoUsuario">
+        <xs:sequence>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="apellido" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="email" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="tipo" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="prestamos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="prestamo" type="tipoPrestamo" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="tipoPrestamo">
+        <xs:sequence>
+            <xs:element name="id_usuario" type="xs:string"/>
+            <xs:element name="fecha_inicio" type="xs:string"/>
+            <xs:element name="fecha_fin" type="xs:string"/>
+            <xs:element name="id_libros">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="id" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>
