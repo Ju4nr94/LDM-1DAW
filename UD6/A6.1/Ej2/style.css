@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+#titulo {
+    text-align: center;
+}
+
+#contenedor-usuarios {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.tarjeta-usuario {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s; /* Efecto suave */
+    margin: 1rem;
+}
+
+h3 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #444;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+.estado-activo {
+    color: #27ae60;
+    font-weight: bold;
+    background-color: #e8f8f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.estado-inactivo {
+    color: #c0392b;
+    font-weight: bold;
+    background-color: #fceceb;
+    padding: 2px 6px;
+    border-radius: 4px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <title>Usuario</title>
+    </head>
+    <body>
+        <h1 id="titulo">Perfiles de usuario</h1>
+        <div id="contenedor-usuarios"></div>
+        <script>
+            const div = document.getElementById('contenedor-usuarios');
+
+            fetch('datos.json')
+                .then(respuesta => respuesta.json())
+                .then(json => {
+                    json.usuarios.forEach(usuario => {
+                        const divUsuario = document.createElement('div');
+                        divUsuario.className = "tarjeta-usuario";
+                        const estadoTexto = usuario.estado ? "Activo" : "Inactivo";
+                        const claseEstado = usuario.estado ? "estado-activo" : "estado-inactivo";
+                        divUsuario.innerHTML = `
+                            <h3>${usuario.nombre}</h3>
+                            <p>Estado: <span class="${claseEstado}">${estadoTexto}</p>
+                            <p>Ubicación: ${usuario.ubicacion}</p>
+                            <p>Hobbies</p>
+                            <ul id="lista-hobbies-${usuario.id}"></ul>
+                        `;
+                        div.appendChild(divUsuario);
+
+                        const ulHobbies = document.getElementById(`lista-hobbies-${usuario.id}`);
+                        if (usuario.hobbies && usuario.hobbies.length > 0) {
+                            usuario.hobbies.forEach(hobbie => {
+                                const li = document.createElement('li');
+                                li.textContent = hobbie;
+                                ulHobbies.appendChild(li);
+                            });
+                        } else {
+                            const li = document.createElement('li');
+                            li.textContent = "No tiene hobbies registrados";
+                            ulHobbies.appendChild(li);
+                        }
+                    })
+                })
+                .catch(error => console.error('Error al leer el archivo JSON:', error));
+        </script>
+    </body>
+</html>

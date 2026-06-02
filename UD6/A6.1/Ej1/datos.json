@@ -1,0 +1,25 @@
+{
+    "usuarios": [
+        {
+            "id": "101",
+            "nombre": "Ana García",
+            "estado": true,
+            "ubicacion": "Calle Mayor 10, Madrid",
+            "hobbies": ["Lectura", "Fotografía", "Ajedrez"]
+        },
+        {
+            "id": "102",
+            "nombre": "Carlos Ruiz",
+            "estado": false,
+            "ubicacion": "Av. Constitución 5, Sevilla",
+            "hobbies": ["Natación", "Ciclismo"]
+        },
+        {
+            "id": "103",
+            "nombre": "Elena Torres",
+            "estado": true,
+            "ubicacion": "Plaza España 2, Barcelona",
+            "hobbies": []
+        }
+    ]
+}

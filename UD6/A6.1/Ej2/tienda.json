@@ -1,0 +1,20 @@
+{
+  "tienda": "TecnoMundo",
+  "productos": [
+    {
+      "nombre": "Laptop Pro",
+      "precio": 1200,
+      "disponible": true
+    },
+    {
+      "nombre": "Mouse Inalámbrico",
+      "precio": 25,
+      "disponible": false
+    },
+    {
+      "nombre": "Teclado Mecánico",
+      "precio": 80,
+      "disponible": true
+    }
+  ]
+}

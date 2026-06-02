@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tienda de Informática</title>
+</head>
+<body>
+    <h1 id="titulo-tienda">Catálogo de Productos</h1>
+    <div id="contenedor-productos"></div>
+
+    <script>
+        const contenedor = document.getElementById('contenedor-productos');
+
+        fetch('tienda.json')
+            .then(respuesta => respuesta.json())
+            .then(json => {
+                document.getElementById('titulo-tienda').textContent = json.tienda;
+
+                json.productos.forEach(producto => {
+                    const divProducto = document.createElement('div');
+                    divProducto.className = "tarjeta-usuario";
+
+                    const claseDisponibilidad = producto.disponible ? "estado-activo" : "estado-inactivo";
+                    const textoDisponibilidad = producto.disponible ? "Disponible" : "Agotado";
+
+                    divProducto.innerHTML = `
+                        <h3>${producto.nombre}</h3>
+                        <p>Precio: ${producto.precio}€</p>
+                        <p>Estado: <span class="${claseDisponibilidad}">${textoDisponibilidad}</span></p>
+                    `;
+                    contenedor.appendChild(divProducto);
+                });
+            })
+            .catch(error => console.error('Error al cargar la tienda:', error));
+    </script>
+</body>
+</html>
