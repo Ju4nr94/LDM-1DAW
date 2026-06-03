@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./clima.xsl"?>
+<reporte_meteorologico>
+    <fecha>2026-05-20</fecha>
+    <localidad nombre="Málaga" provincia="Andalucía">
+        <temperatura>27.5</temperatura>
+        <estado_cielo>Despejado</estado_cielo>
+        <viento direccion="Sur">12</viento>
+        <estado_mar>en calma</estado_mar>
+    </localidad>
+    <localidad nombre="Santander" provincia="Cantabria">
+        <temperatura>16.2</temperatura>
+        <estado_cielo>Lluvia débil</estado_cielo>
+        <viento direccion="Noroeste">35</viento>
+        <estado_mar>bravo</estado_mar>
+    </localidad>
+    <localidad nombre="Valencia" provincia="Comunidad Valenciana">
+        <temperatura>22.0</temperatura>
+        <estado_cielo>Intervalos nubosos</estado_cielo>
+        <viento direccion="Este">18</viento>
+        <estado_mar>en calma</estado_mar>
+    </localidad>
+</reporte_meteorologico>

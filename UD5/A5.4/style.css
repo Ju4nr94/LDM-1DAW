@@ -1,0 +1,58 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #e5e4e2;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 { text-align: center; color: #333; }
+
+p.fecha-reporte {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#ciudad {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.tarjeta h2 { margin: 0 0 5px 0; color: #2c3e50; }
+.tarjeta p { margin: 5px 0; color: #555; }
+.tarjeta p:first-of-type { color: #888; font-size: 0.9em; }
+
+.aviso-mar {
+    display: block;
+    background-color: #ffe6e6;
+    color: #d8000c;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: bold;
+    border: 1px solid #ffcccc;
+}
+.aviso-calor {
+    display: block;
+    background-color: #fffdD0;
+    color: #ff8C00;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #ffefcc;
+}
+.calma {
+    color: #2e7d32;
+    font-weight: bold;
+}
